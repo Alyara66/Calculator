@@ -11,6 +11,9 @@ namespace GitExercise
             "pow - Power",
             "log - Logaritm",
             "fact - Sum of 2 factorial"
+            "d - DIvide",
+            "sabs - Substract Abs",
+
         };
 
         public static void Power(double a, double b)
@@ -50,6 +53,15 @@ namespace GitExercise
         public static void Subtract(double a, double b)
         {
             Console.WriteLine($"{a} - {b} = {a - b}");
+        }
+
+        public static void Divide(double a, double b) 
+        {
+            Console.WriteLine($"|{a} : {b}| = {a/b}");
+        }
+        public static void SubstractAbs(double a, double b)
+        {
+            Console.WriteLine($"|{a} - {b}| = {Math.Abs(a - b)}");
         }
     }
 }
